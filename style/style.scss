@@ -1,0 +1,19 @@
+@use 'variables.scss';
+
+@mixin roberto ($bg-color: blue) {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
+}
+
+
+
+h1{
+    color: variables.$color-primary;
+}
+
+.box{
+    @include roberto(blue)
+    @include position-right
+}
